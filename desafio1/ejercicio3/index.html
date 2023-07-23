@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desaf&iacute;o 3</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: 'Mulish', sans-serif;
+        }
+        body h1 {
+            font-size: 24px;
+            font-weight: 700;
+            color: #04146c;
+            text-align: center;
+        }
+        body form {
+            margin: auto;
+            text-align: center;
+            width: 600px;
+            height: 365px;
+            border: 1px solid #0a2ff1;
+        }
+        body form input {
+            font-family: 'Mulish', sans-serif;
+            font-size: 18.666666666666664px;
+            font-weight: 400;
+            color: #414166;
+            width: 500px;
+            height: 50px;
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #04146c;
+        }
+        body form button {
+            font-family: 'Mulish', sans-serif;
+            font-size: 20px;
+            font-weight: 600;
+            color: white;
+            width: 500px;
+            height: 50px;
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #04146c;
+            background-color: #0a2ff1;
+        }
+        body form a {
+            /* font-family: 'Mulish', sans-serif; */
+            font-size: 18.666666666666664px;
+            font-weight: 400;
+            color: #0a2ff1;
+            text-decoration: none;
+            margin: 20px;
+            text-align: center;
+            display: block;
+        }
+        body form hr {
+            border: 1px solid #04146c;
+            width: 500px;
+            margin: auto;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <form action="login.js" method="post">
+        <h1>Iniciar sesi&oacute;n</h1>
+        <input type="text" name="username" id="username" placeholder="Introduzca el nombre de usuario">
+        <input type="password" name="password" id="password" placeholder="Introduzca la contrase&ntilde;a">
+        <button type="submit">Iniciar sesi&oacute;n</button>
+        <hr>
+        <a href="http://mywebpage.com/password-reset">¿No se puede iniciar sesi&oacute;n?</a>
+        <a href="http://mywebpage.com/sign-up">Reg&iacute;strese para crear una nueva cuenta</a>
+    </form>
+</body>
+</html>

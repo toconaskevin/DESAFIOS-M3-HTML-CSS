@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+        }
+        hr {
+            border-top: 20px solid #0a2ff1;
+            width: 100%;
+            margin: 0px;
+            padding: 0px;
+        }
+        .navbar {
+            display: flex;
+            padding: 0px 30px 0px 30px;
+            margin-top: 20px;
+        }
+        .logo {
+            width: 5%;
+            margin-right: 20px;
+        }
+        nav {
+            width: 95%;
+        }
+        ul {
+            display: flex;
+            justify-content: flex-start;
+        }
+        li {
+            list-style: none;
+            margin-right: 100px;
+        }
+        a {
+            text-decoration: none;
+            color: #04146c;
+            font-weight: 400;
+            font-size: 24px;
+            font-family: 'Roboto', sans-serif;
+        }
+        h2 {
+            font-family: 'Roboto Slab', sans-serif;
+            font-weight: 700;
+            font-size: 45.33333333333333px;
+            color: #2c00cc;
+        }
+        h3 {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 400;
+            font-size: 30.666666666666664px;
+            color: #04146c;
+            margin-bottom: 50px;
+        }
+        form {
+            margin: auto;
+            width: 60%;
+            padding: 25px;
+        }
+        input {
+            width: 500px;
+            height: 50px;
+            display: block;
+            border: 1px solid #04146c;
+        }
+        textarea {
+            width: 500px;
+            height: 100px;
+            display: block;
+        }
+        label {
+            display: block;
+            font-family: 'Roboto', sans-serif;
+            font-size: 30.666666666666664px;
+            color: #04146c;
+            font-weight: 700;
+            margin-top: 30px;
+            margin-bottom: 5px;
+        }
+        button {
+            margin-top: 30px;
+            margin-right: 50px;
+            display: inline;
+            font-family: 'Roboto Slab', sans-serif;
+            font-weight: 700;
+            font-size: 32px;
+            color: white;
+            border-radius: 10px;
+            border: none;
+            padding: 0 10px 0 10px;
+            width: 175px;
+        }
+        label:after {
+            content:" *";
+            color: red;
+        }
+        .activo {
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <hr>
+        <div class="navbar">
+            <img class="logo" src="./img/M5-logo-azul.svg" alt="wh-logo">
+            <nav>
+                <ul>
+                    <li><a href="#" class="activo" >HOME</a></li>
+                    <li><a href="#">CONTACTO</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <form action="contacto.php" method="post">
+        <h2>¿Quer&eacute;s que nos contactemos con vos?</h2>
+        <h3>Dejanos tu consulta:</h3>
+        <label for="name">Nombre completo</label>
+        <input type="text" name="name" id="name" class="required" required>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" required>
+        <label for="comments">Comentario</label>
+        <textarea type="text" name="comments" id="comments" required></textarea>
+        <button type="reset" style="background-color: #f98500;">Resetear</button>
+        <button type="submit" style="background-color: #2c00cc;">Enviar</button>
+    </form>
+</body>
+</html>
